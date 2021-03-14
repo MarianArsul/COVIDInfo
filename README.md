@@ -7,11 +7,12 @@ The COVID-19 pandemic has caused an uproar around the world, leading to an urgen
 Currently, this application is intended for the general public in Romania, the application being available in Romanian initially, but with plans for English as well.
 
 # Use the app
-Currently, this needs to be built in Xcode to be used. Looking forward to releasing a Test Flight version, for easier install.\n
+Currently, this needs to be built in Xcode to be used. Looking forward to releasing a Test Flight version, for easier install.
 Instructions:
-  Download the repository as .zip
-  Unpack and open the project in Xcode
-  Build for your device and use.
+  * Download the repository as .zip
+  * Unpack and open the project in Xcode
+  * Build for your device and use.
+
   
 # Fair use & Creative Commons
 Please, if you are reusing any code from this project for your app, don't forget to link to this repository.
