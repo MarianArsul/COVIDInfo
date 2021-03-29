@@ -16,8 +16,8 @@ struct TabBar: View {
     
     @State var currentIndex = 0
     
-    let tabBarIconsNotFilled = ["house", "newspaper", "arrow.up.forward.circle","questionmark.circle"]
-    let tabBarIconsFilled = ["house.fill", "newspaper.fill", "arrow.up.forward.circle.fill", "questionmark.circle.fill"]
+    let tabBarIconsNotFilled = ["house", "arrow.up.forward.circle","bandage"]
+    let tabBarIconsFilled = ["house.fill", "arrow.up.forward.circle.fill", "bandage.fill"]
     
     var body: some View {
         VStack(spacing: 0) {
@@ -26,11 +26,9 @@ struct TabBar: View {
                 case 0:
                     HomeView()
                 case 1:
-                    NewsView()
-                case 2:
                     StatisticsView()
                 default:
-                    MythBustersView()
+                    VactinationView()
                 }
             }
             
@@ -38,7 +36,7 @@ struct TabBar: View {
                 .padding(.bottom, 15)
             
             HStack {
-                ForEach(0..<4){ num in
+                ForEach(0..<3){ num in
                     Spacer()
                     Button(action: {
                         currentIndex = num
@@ -47,14 +45,13 @@ struct TabBar: View {
                         if currentIndex == num {
                             Image(systemName: tabBarIconsFilled[num])
                                 .font(.system(size: 24, weight: .bold))
-                                .foregroundColor(currentIndex == num ? Color(.yellow) : .init(white: 0.8))
+                                .foregroundColor(currentIndex == num ? Color(.black) : .init(white: 0.8))
                         }
                         else{
                             Image(systemName: tabBarIconsNotFilled[num])
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(currentIndex == num ? Color(.yellow) : .init(white: 0.8))
                         }
-                        
                         Spacer()
                     })
                 }
@@ -68,4 +65,3 @@ struct TabBar_Previews: PreviewProvider {
         TabBar()
     }
 }
- 

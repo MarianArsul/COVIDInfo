@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		340B3F5725F2CF27005B1143 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3F5625F2CF27005B1143 /* NewsView.swift */; };
-		3452C0AC25F258CC00E2145B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452C0AB25F258CC00E2145B /* HomeView.swift */; };
 		3452C0B025F275A600E2145B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452C0AF25F275A600E2145B /* TabBar.swift */; };
 		3452C0B625F2794D00E2145B /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452C0B525F2794D00E2145B /* StatisticsView.swift */; };
-		3452C0B925F2796400E2145B /* MythBustersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452C0B825F2796400E2145B /* MythBustersView.swift */; };
+		3477C1F625FF3AAE00B0C0BC /* VacciantionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3477C1F525FF3AAE00B0C0BC /* VacciantionView.swift */; };
+		34936947260F5B2A00FA0EFE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34936946260F5B2A00FA0EFE /* SettingsView.swift */; };
+		349369522610F9C900FA0EFE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349369512610F9C900FA0EFE /* HomeView.swift */; };
+		3498372F2611A1DE009667E2 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498372E2611A1DE009667E2 /* UIImageColors.swift */; };
+		349837332611FC5F009667E2 /* SurseSigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349837322611FC5E009667E2 /* SurseSigureView.swift */; };
+		34983736261200FD009667E2 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983735261200FD009667E2 /* CardsView.swift */; };
 		349FCF0725EFBCC800B05274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FCF0625EFBCC800B05274 /* AppDelegate.swift */; };
 		349FCF0925EFBCC800B05274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FCF0825EFBCC800B05274 /* SceneDelegate.swift */; };
 		349FCF0B25EFBCC800B05274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FCF0A25EFBCC800B05274 /* ContentView.swift */; };
@@ -22,10 +26,14 @@
 
 /* Begin PBXFileReference section */
 		340B3F5625F2CF27005B1143 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
-		3452C0AB25F258CC00E2145B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3452C0AF25F275A600E2145B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3452C0B525F2794D00E2145B /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
-		3452C0B825F2796400E2145B /* MythBustersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythBustersView.swift; sourceTree = "<group>"; };
+		3477C1F525FF3AAE00B0C0BC /* VacciantionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacciantionView.swift; sourceTree = "<group>"; };
+		34936946260F5B2A00FA0EFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		349369512610F9C900FA0EFE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3498372E2611A1DE009667E2 /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
+		349837322611FC5E009667E2 /* SurseSigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurseSigureView.swift; sourceTree = "<group>"; };
+		34983735261200FD009667E2 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		349FCF0325EFBCC800B05274 /* CoronaVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349FCF0625EFBCC800B05274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349FCF0825EFBCC800B05274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,14 +74,18 @@
 		349FCF0525EFBCC800B05274 /* CoronaVirus */ = {
 			isa = PBXGroup;
 			children = (
+				3498372E2611A1DE009667E2 /* UIImageColors.swift */,
 				349FCF0625EFBCC800B05274 /* AppDelegate.swift */,
 				349FCF0825EFBCC800B05274 /* SceneDelegate.swift */,
 				349FCF0A25EFBCC800B05274 /* ContentView.swift */,
 				3452C0AF25F275A600E2145B /* TabBar.swift */,
-				3452C0AB25F258CC00E2145B /* HomeView.swift */,
+				34936946260F5B2A00FA0EFE /* SettingsView.swift */,
+				349369512610F9C900FA0EFE /* HomeView.swift */,
+				34983735261200FD009667E2 /* CardsView.swift */,
+				349837322611FC5E009667E2 /* SurseSigureView.swift */,
 				340B3F5625F2CF27005B1143 /* NewsView.swift */,
 				3452C0B525F2794D00E2145B /* StatisticsView.swift */,
-				3452C0B825F2796400E2145B /* MythBustersView.swift */,
+				3477C1F525FF3AAE00B0C0BC /* VacciantionView.swift */,
 				349FCF0C25EFBCCB00B05274 /* Assets.xcassets */,
 				349FCF1125EFBCCB00B05274 /* LaunchScreen.storyboard */,
 				349FCF1425EFBCCB00B05274 /* Info.plist */,
@@ -160,11 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349837332611FC5F009667E2 /* SurseSigureView.swift in Sources */,
 				349FCF0725EFBCC800B05274 /* AppDelegate.swift in Sources */,
-				3452C0AC25F258CC00E2145B /* HomeView.swift in Sources */,
+				3498372F2611A1DE009667E2 /* UIImageColors.swift in Sources */,
+				3477C1F625FF3AAE00B0C0BC /* VacciantionView.swift in Sources */,
+				34936947260F5B2A00FA0EFE /* SettingsView.swift in Sources */,
+				349369522610F9C900FA0EFE /* HomeView.swift in Sources */,
 				349FCF0925EFBCC800B05274 /* SceneDelegate.swift in Sources */,
 				3452C0B625F2794D00E2145B /* StatisticsView.swift in Sources */,
-				3452C0B925F2796400E2145B /* MythBustersView.swift in Sources */,
+				34983736261200FD009667E2 /* CardsView.swift in Sources */,
 				349FCF0B25EFBCC800B05274 /* ContentView.swift in Sources */,
 				340B3F5725F2CF27005B1143 /* NewsView.swift in Sources */,
 				3452C0B025F275A600E2145B /* TabBar.swift in Sources */,
