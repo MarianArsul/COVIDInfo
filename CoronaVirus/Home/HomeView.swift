@@ -30,7 +30,11 @@ struct HomeView: View {
     
     @State public var NewsViewFullScreen = false
     @State public var showSettings = false
-    @State public var showCards = false
+    @State public var showPreventie = false
+    @State public var showSimptome = false
+    @State public var showMythBusters = false
+    @State public var showDocumenteUtile = false
+    @State public var showSurseSigure = false
     
     var body: some View{
         ScrollView {
@@ -70,24 +74,35 @@ struct HomeView: View {
                         Spacer()
                     }
                     
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        VStack {
-                            HStack(spacing: 220) {
-                                ForEach(cards.indices, id: \.self) { index in
-                                    GeometryReader { geometry in
-                                        CardView(show: self.$cards[index].show, card: self.cards[index])
-                                            .offset(y: self.cards[index].show ? -geometry.frame(in: .global).minY : 0)
-                                    }
-                                    .frame(height: self.cards[index].show ? screen.height : 250)
-                                    .frame(maxWidth: self.cards[index].show ? .infinity : screen.width-60)
-                                    .offset(x: 30)
-                                }
+                    ScrollView(.horizontal, showsIndicators: false){
+                        HStack(spacing: 30){
+                            Button(action: {self.showPreventie.toggle()}) {
+                                CardsView(card: cards[0])}
+                                .sheet(isPresented: $showPreventie) {
+                                    PreventieView()}
+                            Button(action: {self.showSimptome.toggle()}) {
+                                CardsView(card: cards[1])}
+                                .sheet(isPresented: $showSimptome) {
+                                    SimptomeView()}
+                            Button(action: {self.showMythBusters.toggle()}) {
+                                CardsView(card: cards[2])}
+                                .sheet(isPresented: $showMythBusters) {
+                                    MythBustersView()}
+                            Button(action: {self.showDocumenteUtile.toggle()}) {
+                                CardsView(card: cards[3])}
+                                .sheet(isPresented: $showDocumenteUtile) {
+                                    DocumenteUtileView()}
+                            Button(action: {self.showSurseSigure.toggle()}) {
+                                CardsView(card: cards[4])}
+                               .sheet(isPresented: $showSurseSigure) {
+                                SurseSigureView()
                             }
                         }
-                        /*.frame(width: 700, height: 270)
-                        .offset(x: 30)*/
+                        .offset(x: -30)
+                        .frame(width: 1000, height: 310)
                     }
+                    //.padding(.bottom, 40)
+                    .padding(.top, -50)
                     
                     HStack {
                         Text("Știri")
@@ -95,6 +110,7 @@ struct HomeView: View {
                     }
                     .padding(.leading,-160)
                     .offset(y: -40)
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                     
                     VStack(spacing: 20){
                         ForEach(articles.indices, id: \.self) { index in
@@ -109,9 +125,12 @@ struct HomeView: View {
                         
                 }
                 .offset(y: -30)
+                
                 Spacer()
+                    
             }
         }
+            
     }
         .padding(.top, 44)
         .background(Color.white)
@@ -143,6 +162,7 @@ struct HomeView: View {
                     }
             )
         }
+        
 }
 
 struct HomeView_Previews: PreviewProvider {
