@@ -15,6 +15,7 @@ struct PreventieView: View {
                 Image("covid1")
                     .aspectRatio(contentMode: .fill)
                     .zIndex(1)
+                    //.opacity(0.6)
                 
                 Spacer()
                 Link(destination: URL(string: "https://cetrebuiesafac.ro/cum-ne-protejam")!){
@@ -112,7 +113,7 @@ struct PreventieView: View {
             }
         }
         .frame(width: screen.width+30, height: screen.height+13)
-        .background(Color(#colorLiteral(red: 0.9734770656, green: 0.8399353623, blue: 0.6799591184, alpha: 1)))
+        .background(Color.black)
     }
 }
 

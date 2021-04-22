@@ -5,7 +5,7 @@
 //  Created by Milovan on 05.03.2021.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 
 //function used to display message based on time of day
@@ -74,10 +74,10 @@ struct HomeView: View {
                         Spacer()
                     }
                     
-                    ScrollView(.horizontal, showsIndicators: false){
+                    ScrollView(.horizontal){
                         HStack(spacing: 30){
                             Button(action: {self.showPreventie.toggle()}) {
-                                CardsView(card: cards[0])}
+                                //CardsView(card: cards[0])}
                                 .sheet(isPresented: $showPreventie) {
                                     PreventieView()}
                             Button(action: {self.showSimptome.toggle()}) {
@@ -91,14 +91,10 @@ struct HomeView: View {
                             Button(action: {self.showDocumenteUtile.toggle()}) {
                                 CardsView(card: cards[3])}
                                 .sheet(isPresented: $showDocumenteUtile) {
-                                    DocumenteUtileView()}
-                            Button(action: {self.showSurseSigure.toggle()}) {
-                                CardsView(card: cards[4])}
-                               .sheet(isPresented: $showSurseSigure) {
-                                SurseSigureView()
-                            }
+                                    DocumentsView()}
+                            
                         }
-                        .offset(x: -30)
+                        .offset(x: 90)
                         .frame(width: 1000, height: 310)
                     }
                     //.padding(.bottom, 40)
@@ -172,3 +168,4 @@ struct HomeView_Previews: PreviewProvider {
 }
 
 }
+*/

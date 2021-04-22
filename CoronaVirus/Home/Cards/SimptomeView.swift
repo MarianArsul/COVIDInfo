@@ -45,7 +45,7 @@ struct SimptomeView: View {
                 
             }
             
-            ScrollView(.horizontal, showsIndicators: false){
+            ScrollView(.horizontal){
                 HStack(spacing: 10) {
                     ForEach(dataSimptome){ item in
                         VStack(){

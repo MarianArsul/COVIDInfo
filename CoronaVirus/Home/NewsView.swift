@@ -50,9 +50,9 @@ struct ArticleView: View {
     var body: some View {
         ZStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 30.0) {
-                Text("În ultimele 24 de ore au fost raportate 3.825 de cazuri noi de COVID-19. Alți 120 de români au murit după ce s-au infectat cu noul coronavirus. Un nou record de pacienți internați la ATI - 1.398.")
+                Text("")
                     .font(.title).bold()
-                Text("Până astăzi, 29 martie, pe teritoriul României, au fost confirmate 940.443 de cazuri de persoane infectate cu noul coronavirus (COVID – 19).840.127 de pacienți au fost declarați vindecațiÎn urma testelor efectuate la nivel național, față de ultima raportare, au fost înregistrate 3.825 cazuri noi de persoane infectate cu SARS – CoV – 2 (COVID – 19), acestea fiind cazuri care nu au mai avut anterior un test pozitiv.Coeficientul infectărilor cumulate la 14 zile, raportate la 1.000 de locuitori este calculat de către Direcțiile de Sănătate Publică, la nivelul Municipiului București și al județelor.")
+                Text("")
                     
             }
             .padding(30)
@@ -122,7 +122,7 @@ struct Article: Identifiable {
 }
 
 var articleData = [
-    Article(title: "Un nou record de pacienți internați la ATI", description: "Capitala și alte 11 județe sunt în scenariul roșu", image: Image("prevent1"), newsLogo: Image("logo-digi24"), color: Image("stire1"), show: false),
+    Article(title: "", description: "", image: Image("prevent1"), newsLogo: Image(""), color: Image("blackTest"), show: false),
     Article(title: "Arctile title 1", description: "Arcticle description 1", image: Image("prevent1"), newsLogo: Image(systemName: "newspaper"), color: Image("blackTest"), show: false),
     Article(title: "Arctile title 1", description: "Arcticle description 1", image: Image("prevent2"), newsLogo: Image(systemName: "newspaper"), color: Image("prevent2"), show: false)
 ]

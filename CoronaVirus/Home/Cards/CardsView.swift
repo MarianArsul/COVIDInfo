@@ -11,55 +11,39 @@
 import SwiftUI
 
 struct CardsView: View {
-    var card: Card
-    var width: CGFloat = 200
-    var height: CGFloat = 200
+    
+    var card : Card
     
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
-                Text(card.title)
-                    .font(.system(size: 20, weight: .bold))
-                    .frame(width: 1000, alignment: .center)
-                    .foregroundColor(.black)
-                Spacer()
-            }
-            
-            Text(card.description)
-                .font(.system(size:15))
-                .frame(maxWidth: 240 , alignment: .center)
-            
-            
+        ZStack{
             card.image
                 .resizable()
+                .clipShape(RoundedRectangle(cornerRadius: 20))
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 275)
-                .padding(.bottom,-33)
-    
+                .frame(width: 250, height: 350)
+                .offset(y: 10)
+            
+            VStack(alignment: .trailing) {
+                Text(card.title)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 25, weight: .bold))
+                    .shadow(radius: 20)
+                    //.zIndex(2)
+            }
+            .frame(width: 250,height: 70)
+            .background(RoundedRectangle(cornerRadius: 10).fill(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)), Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4281312046))]), startPoint: .top, endPoint: .bottom)))
+            .offset(y: 140)
+            .shadow(radius: 100)
+            .zIndex(2)
         }
-        .padding(.top, 20)
-        .padding(.horizontal, 20)
-        .frame(width: width, height: height)
-        .background(card.color)
-        .cornerRadius(30)
-        .shadow(color: card.color.opacity(1), radius: 20, x: 10, y: 20)
+        .frame(width: 250, height: 350)
+        .background(RoundedRectangle(cornerRadius: 20).fill(card.color))
+    }
 }
 
 struct CardsView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 30) {
-                ForEach(cardsData) { item in
-                    CardsView(card: item)
-                }
-            }
-            .padding(30)
-            .padding(.bottom, 20)
-            .padding(.top, -15)
-            
-            }
-        }
+        CardsView(card: cardsData[0])
     }
 }
 
@@ -73,10 +57,9 @@ struct Card: Identifiable {
 }
 
 let cardsData = [
-    Card(title: "Prevenție", description: "Cum să te protejezi", description_height: 50, image: Image("prevent1"), color: Color(#colorLiteral(red: 0.9725490196, green: 0.9333333333, blue: 0.9176470588, alpha: 1))),
-    Card(title: "Simptome", description: "Covid-19", description_height: 30, image: Image("simptome2"), color: Color(#colorLiteral(red: 0.8667405248, green: 0.9350652099, blue: 0.9954409003, alpha: 1))),
-    Card(title: "Myth-busters", description: "Nu mai crede tot ce auzi!", description_height: 30, image: Image("myth-busters"), color: Color(#colorLiteral(red: 0.9177460074, green: 0.7902315855, blue: 0.9823716283, alpha: 1))),
-    Card(title: "Documente utile", description: "Poate o să îți vină de folos", description_height: 30, image: Image("documente-utile"), color: Color(#colorLiteral(red: 0.918138504, green: 0.9530698657, blue: 0.9800389409, alpha: 1))),
-    Card(title: "Surse sigure", description: "De unde să te informezi", description_height: 30, image: Image("trusted-sources"), color: Color(#colorLiteral(red: 0.9710895419, green: 0.8475009799, blue: 0.7614192367, alpha: 1)))
+    Card(title: "Prevenție", description: "", description_height: 50, image: Image("preventie"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
+    Card(title: "Simptome", description: "", description_height: 30, image: Image("simptome"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
+    Card(title: "Intrebari frecvente", description: "", description_height: 30, image: Image("intrebariFrecventeCard"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
+    Card(title: "Documente", description: "", description_height: 30, image: Image("documente"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 ]
 
