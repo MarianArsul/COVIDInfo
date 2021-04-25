@@ -2,13 +2,14 @@
 //  Home.swift
 //  CoronaVirus
 //
-//  Created by Milovan on 11.04.2021.
+//  Created by Milovan on 24.04.2021.
 //
 
 import SwiftUI
 import SwiftUITrackableScrollView
+import PartialSheet
 
-//function used to display message based on time of day
+
 func timeOfDay() -> String {
     let hour = Calendar.current.component(.hour, from: Date()) // get current hour
     var messageToBeDisplayed = ""
@@ -21,161 +22,250 @@ func timeOfDay() -> String {
     return messageToBeDisplayed
 }
 
+let screen: CGRect = UIScreen.main.bounds
+
 struct Home: View {
-    
-    @State private var scrollViewContentOffset = CGFloat(0)
-    @State var cards = cardsData
-    @State var articles = articleData
-    @State var viewState = CGSize.zero
+    @State private var cards = cardsData
+    @EnvironmentObject var partialSheetManager : PartialSheetManager
     
     @State var showPreventie = false
     @State var showSimptome = false
     @State var showIntrebariFrecvente = false
     @State var showDocumente = false
-    @State var showSettings = false
-    @State public var showNews = false
+    @State var showSympthomsForm = false
+    @State var showVaccinare = false
     
     var body: some View {
-        ScrollView {
-            ZStack{
-                ZStack{
-                    Text("Acasă")
-                        .font(.system(size: 25, weight: .bold))
-                        .foregroundColor(Color.white)
-                        .offset(y: 25)
-                        .opacity(scrollViewContentOffset > 60 ? 0.01 * Double(scrollViewContentOffset) : 0)
-                    
-                    Button(action: {self.showSettings.toggle()}){
-                        HStack {
-                            Image(systemName: "gear")
-                                .font(.system(size: 25, weight: .bold))
-                                .foregroundColor(Color.black)
-                        }
-                        .background(Circle().fill(Color.white))
-                        .offset(x: 150)
-                        .offset(y: 25)
-                    }
-                }
-                .frame(width: showNews ? 0 : screen.width, height: showNews ? 0 : 100)
-                .background(Color.black)
-                .offset(y: -390)
-                .zIndex(2)
+        if showIntrebariFrecvente == false{
+            ScrollView(.vertical, showsIndicators: false) {
                 
-                TrackableScrollView(.vertical, showIndicators: false, contentOffset: $scrollViewContentOffset){
+                HStack {
+                    Text(timeOfDay() + "Milovan")
+                        .foregroundColor(Color.black)
+                        .font(.system(size: 20, weight: .bold))
+                        .padding(.leading, 16)
                     
-                    Text(timeOfDay())
-                        .foregroundColor(Color.white)
-                        .offset(y: 100)
-                        .font(.system(size: 35, weight: .bold))
-                        .offset(x: -80)
-                    
-                    Text("Milovan")
-                        .foregroundColor(Color(#colorLiteral(red: 0.8805052638, green: 0.3253605962, blue: 0.3551793694, alpha: 1)))
-                        .font(.system(size: 35, weight: .bold))
-                        .offset(y: 94)
-                        .offset(x: -103)
-                    
-                    /*HStack{
-                        Text("Acasă")
-                            .underline()
-                            .foregroundColor(Color(#colorLiteral(red: 0.9004377723, green: 0.3697259426, blue: 0.2659708261, alpha: 1)))
-                            .padding(.leading, 30)
-                            .font(.system(size: 20, weight: .bold))
-                        
+                    Spacer()
+                }
+                .offset(y: 140)
+                
+                VStack{
+                    HStack {
                         Spacer()
                         
-                        Text("Statistici")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 20, weight: .bold))
-                        
-                        Spacer()
-                        
-                        Text("Vaccinare")
-                            .foregroundColor(Color.white)
-                            .padding(.trailing, 30)
-                            .font(.system(size: 20, weight: .bold))
+                        Image(systemName: "gear")
+                            .font(.system(size: 25, weight: .bold))
                     }
-                    .frame(width: screen.width, height: 40)
-                    .background(Color.black)
-                    .offset(y: 110)*/
+                    .offset(y: -20)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
                     
-                    ScrollView(.horizontal, showsIndicators: false){
-                        HStack(spacing: 20){
-                            Button(action: {self.showPreventie.toggle()}){CardsView(card: cards[0]).offset(x: 30)}.sheet(isPresented: $showPreventie){PreventieView()}
-                            Button(action: {self.showSimptome.toggle()}){CardsView(card: cards[1]).offset(x: 30)}.sheet(isPresented: $showSimptome){SimptomeView()}
-                            Button(action: {self.showIntrebariFrecvente.toggle()}){CardsView(card: cards[2]).offset(x: 30)}.sheet(isPresented: $showIntrebariFrecvente){MythBustersView()}
-                            Button(action: {self.showDocumente.toggle()}){CardsView(card: cards[3]).offset(x: 30)}.sheet(isPresented: $showDocumente){DocumentsView()}
+                    Button(action: {showSympthomsForm.toggle()}) {
+                        ZStack{
+                            Image("covid1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .offset(x: 90)
+                                .frame(width:180, height: 180)
+                            
+                            Text("Ar trebui să mă")
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 20, weight: .bold))
+                                .offset(x: -90)
+                                .offset(y: -40)
+                            
+                            Text("îngrijorez ?")
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 25, weight: .bold))
+                                .offset(x: -96)
+                                .offset(y: -14)
+                            
+                            HStack{
+                                Text("Verifică simptomele")
+                                    .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                                    .font(.system(size: 15, weight: .bold))
+                                
+                                Image(systemName: "arrow.right")
+                                    .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                                    .font(.system(size: 15, weight: .bold))
+                            }
+                            .offset(x: -74)
+                            .offset(y: 20)
+                            
+                        }
+                        .frame(width: 350, height: 250)
+                        .background(RoundedRectangle(cornerRadius: 20) .fill(Color.white))
+                        .padding(.leading, 20)
+                        .padding(.trailing, 20)
+                        .offset(y: 10)
+                    }
+                    .sheet(isPresented: $showSympthomsForm){SympthomsTest()}
+                    
+                    VStack {
+                        Text("INFORMAȚII")
+                            .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                            .font(.system(size: 15, weight: .bold))
+                            .offset(x: -130)
+                            //.offset(y: 10)
+                        
+                        ScrollView(.horizontal, showsIndicators: false){
+                            HStack(spacing: 20){
+                                Button(action: {self.showPreventie.toggle()}){CardsView(card: cards[0]).offset(x: 30)}.sheet(isPresented: $showPreventie){PreventieView().zIndex(1)}
+                                Button(action: {self.showSimptome.toggle()}){CardsView(card: cards[1]).offset(x: 30)}.sheet(isPresented: $showSimptome){SimptomeView()}
+                                Button(action: {self.showIntrebariFrecvente.toggle()}){CardsView(card: cards[2]).offset(x: 30)}//.sheet(isPresented: $showIntrebariFrecvente){IntrebariFrecvente().zIndex(1)}
+                                Button(action: {self.showDocumente.toggle()}){CardsView(card: cards[3]).offset(x: 30)}.sheet(isPresented: $showDocumente){DocumentsView()}
+                                
+                                Spacer()
+                                Spacer()
+                            }
+                            .offset(x: -10)
+                        }
+                    }
+                    .offset(y: 15)
+                    
+                    VStack{
+                        HStack {
+                            Text("ULTIMELE STATISTICI")
+                                .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                                .font(.system(size: 15, weight: .bold))
+                                //.offset(x: -95)
                             
                             Spacer()
-                            Spacer()
-                        }
-                    }
-                    .offset(y: 85)
-                    
-                    SurseSigure()
-                        .offset(y: 100)
-                    
-                    Text("Stiri")
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 25, weight: .bold))
-                        .offset(y: 120)
-                        .offset(x: -140)
-                    
-                    VStack(spacing: 20){
-                        ForEach(articles.indices, id: \.self) { index in
-                            GeometryReader { geometry in
-                                Button(action: {showNews.toggle()}){
-                                    ArticleView(show: self.$articles[index].show, article: self.articles[index])
-                                        .zIndex(3)
-                                        .offset(y: self.articles[index].show ? -geometry.frame(in: .global).minY : 0)
+                            
+                            Button(action: {showVaccinare.toggle()}) {
+                                HStack {
+                                    Text("VEZI MAI MULT")
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))                           .font(.system(size: 15, weight: .bold))
+                                   
+                                    Image(systemName: "arrow.right")
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
+                                        .font(.system(size: 15, weight: .bold))
                                 }
                             }
-                            .frame(height: self.articles[index].show ? screen.height : 280)
-                            .frame(maxWidth: self.articles[index].show ? .infinity : screen.width-60)
+                            .fullScreenCover(isPresented: $showVaccinare){VactinationView()}
                         }
+                        .padding(.leading, 20)
+                        .padding(.trailing, 20)
+                        
+                        StatisticiPreview()
                     }
-                    .offset(y: 130)
+                    .offset(y: 40)
                     
-                    if showSettings == true {
-                        SettingsView()
-                            .background(Color.black.opacity(0.001))
-                            .offset(y: showSettings ? 0:100)
-                            .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-                            .onTapGesture {
-                                self.showSettings.toggle()
-                            }
-                            .gesture(
-                                DragGesture().onChanged {value in self.viewState = value.translation}
-                                .onEnded{value in
-                                    if self.viewState.height > 50 {
-                                        self.showSettings = false
-                                    }
-                                    self.viewState = .zero
-                            }
-                        )
+                    ZStack{
+                        Image("VaccinePreview")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .offset(x: 100)
+                            .frame(width: 200, height: 200)
+                        
+                        Text("Hai la")
+                            .font(.system(size: 20, weight: .bold))
+                            .offset(x: -130)
+                            .offset(y: -40)
+                        
+                        Text("VACCINARE!")
+                            .font(.system(size: 25, weight: .bold))
+                            .offset(x: -80)
+                            .offset(y: -10)
+                        
+                        HStack{
+                            Text("Găsește un centru")
+                                .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                                .font(.system(size: 15, weight: .bold))
+                            
+                            Image(systemName: "arrow.right")
+                                .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                                .font(.system(size: 15, weight: .bold))
+                        }
+                        .offset(x: -74)
+                        .offset(y: 20)
+                        
+                        Text("#OmCuOmOprimPandemia")
+                            .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                            .font(.system(size: 13, weight: .bold))
+                            .offset(x: -68)
+                            .offset(y: 105)
+                        
                     }
+                    .frame(width: 350, height: 250)
+                    .background(RoundedRectangle(cornerRadius: 20) .fill(Color.white))
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                    .offset(y: 60)
+                    
+                    SurseSigure()
+                        .offset(y: 50)
+                    
+                    ForEach(0..<20){item in
+                        Spacer()
+                    }
+                    
                 }
-                .zIndex(1)
-                
+                .offset(y: 110)
             }
-            .frame(width: screen.width, height: screen.height)
-            .background(Color.black)
+            .frame(height: screen.height)
+            .background(Color(#colorLiteral(red: 0.9646044374, green: 0.9647659659, blue: 0.9645816684, alpha: 1)))
+            .edgesIgnoringSafeArea(.all)
+            .navigationBarTitle("Acasă")
+            .navigationViewStyle(StackNavigationViewStyle())
         }
-        //.padding(.top, 4)
-        .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .offset(y: showSettings ? -400:0)
-        .offset(y: viewState.height)
-        .rotation3DEffect(Angle(degrees: showSettings ? Double(viewState.height / 10) - 10 : 0), axis: (x: 10, y: 0, z: 0.0))
-        .shadow(color: showSettings ? Color.black.opacity(4) : Color.white, radius: showSettings ? 20 : 0, x:0, y:20)
-        .scaleEffect(showSettings ? 0.9:1)
-        .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-        .edgesIgnoringSafeArea(.all)
+        else{
+            IntrebariFrecvente()
+        }
     }
 }
 
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
+struct StatisticiPreview : View{
+    var body: some View{
+        
+        HStack{
+            ZStack{
+                Text("Cazuri noi")
+                    .font(.system(size: 15, weight: .bold))
+                    .offset(y: -50)
+                    .offset(x: -30)
+                
+                Text("###.###")
+                    .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                    .font(.system(size: 20, weight: .bold))
+                    .offset(x: -25)
+                    .offset(y: -20)
+                
+                Image("StatisticiPreview")
+                    .resizable()
+                    .frame(width: 100, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                    .offset(y: 30)
+                
+            }
+            .frame(width: 160, height: 150)
+            .background(RoundedRectangle(cornerRadius: 20) .fill(Color.white))
+            
+            Spacer()
+            
+            ZStack{
+                Text("Cazuri totale")
+                    .font(.system(size: 15, weight: .bold))
+                    .offset(y: -50)
+                    .offset(x: -20)
+                
+                Text("#.###.###")
+                    .foregroundColor(Color(#colorLiteral(red: 0.8940980434, green: 0.3246456385, blue: 0.3590234518, alpha: 1)))
+                    .font(.system(size: 20, weight: .bold))
+                    .offset(x: -17)
+                    .offset(y: -20)
+                
+                Image("StatisticiPreview")
+                    .resizable()
+                    .frame(width: 100, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                    .offset(y: 30)
+            }
+            .frame(width: 160, height: 150)
+            .background(RoundedRectangle(cornerRadius: 20) .fill(Color.white))
+        }
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
     }
 }
 
@@ -184,50 +274,44 @@ struct SurseSigure : View{
         ZStack {
             HStack{
                 HStack {
-                    Text("Surse ")
-                        .font(.system(size: 25, weight: .bold))
-                        .foregroundColor(Color.white)
-                    + Text("sigure")
-                        .foregroundColor(Color(#colorLiteral(red: 0.8805052638, green: 0.3253605962, blue: 0.3551793694, alpha: 1)))
-                        .font(.system(size: 25, weight: .bold))
-                    }
-                    .padding(.leading, 30)
-                
-                Spacer()
-                
-                Link(destination: URL(string: "https://vaccinare-covid.gov.ro/resurse/surse-oficiale-de-informare/")!){
-                    Image(systemName: "info.circle")
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 25, weight: .bold))
-                        .padding(.trailing, 30)
+                    Text("SURSE SIGURE DE INFORMARE")
+                        .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                        .font(.system(size: 15, weight: .bold))
+                    
+                    Spacer()
                 }
+                .padding(.leading, 30)
             }
             .frame(width: screen.width)
             .offset(y: -60)
             
             ScrollView(.horizontal, showsIndicators: false){
-                HStack(spacing: 10){
+                HStack(spacing: -10){
                     ForEach(0..<surseOficiale.count){item in
                         Link(destination: URL(string: surseOficiale[item].website)!){
-                            VStack(alignment: .center){
-                                surseOficiale[item].image
-                                    .resizable()
-                                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                    .frame(width: 60, height: 60)
-                                    .position(x: 50, y: 55)
-                                
+                            ZStack(alignment: .center){
+                                VStack {
+                                    surseOficiale[item].image
+                                        .resizable()
+                                        .frame(width: 70, height: 70)
+                                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                    }
+                                    .frame(width: 90, height: 190)
+                                    .background(Circle().fill(Color.white))
+                                    
+                                    
                                 Text(surseOficiale[item].nume)
-                                    .foregroundColor(Color.white)
-                                    .position(x: 50, y: 20)
+                                    .foregroundColor(Color.black)
+                                    .offset(y: 80)
+                                    //.position(x: 50, y: 20)
                             }
-                            .frame(width: 90, height: 190)
+                            .frame(width: 120, height: 250)
+                            
                         }
                     }
-                    
-                    Spacer()
-                    Spacer()
                 }
-                .offset(y: 40)
+                .offset(y: 5)
+                .offset(x: -10)
             }
             .offset(x: 20)
             .offset(y: 10)
@@ -258,3 +342,14 @@ let surseOficiale = [
     Sursa(nume: "Conduită sanitară", website: "https://stirioficiale.ro/conduita", image: Image("placeholder")),
     Sursa(nume: "Conduită sanitară", website: "https://stirioficiale.ro/conduita", image: Image("placeholder"))*/
 ]
+
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            Home()
+        }
+        .addPartialSheet()
+        .navigationViewStyle(StackNavigationViewStyle())
+        .environmentObject(PartialSheetManager())
+    }
+}

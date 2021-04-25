@@ -7,35 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		340B3F5725F2CF27005B1143 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3F5625F2CF27005B1143 /* NewsView.swift */; };
 		341232062620C95D003F4371 /* PDFNet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341232052620C95D003F4371 /* PDFNet.xcframework */; };
 		341232072620C95D003F4371 /* PDFNet.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341232052620C95D003F4371 /* PDFNet.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3412320A2620C967003F4371 /* Tools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341232092620C967003F4371 /* Tools.xcframework */; };
 		3412320B2620C967003F4371 /* Tools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341232092620C967003F4371 /* Tools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3412350B262343B80021CA99 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412350A262343B80021CA99 /* Home.swift */; };
-		3416AEEC2617C70A008A46A8 /* emergency.json in Resources */ = {isa = PBXBuildFile; fileRef = 3416AEEB2617C70A008A46A8 /* emergency.json */; };
 		34281B3226147815004A218C /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34281B3126147814004A218C /* CardsView.swift */; };
 		34281B39261482F9004A218C /* PreventieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34281B38261482F9004A218C /* PreventieView.swift */; };
-		34281B3C26148308004A218C /* MythBustersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34281B3B26148308004A218C /* MythBustersView.swift */; };
+		342CD59D2635EF8A00CEB940 /* GifView_RepeatOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CD59C2635EF8A00CEB940 /* GifView_RepeatOnce.swift */; };
 		343D5B5326164B35004BDDF5 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 343D5B5226164B35004BDDF5 /* Pods */; };
-		3452C0B025F275A600E2145B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452C0AF25F275A600E2145B /* TabBar.swift */; };
 		3452C0B625F2794D00E2145B /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452C0B525F2794D00E2145B /* StatisticsView.swift */; };
 		3477C1F625FF3AAE00B0C0BC /* VacciantionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3477C1F525FF3AAE00B0C0BC /* VacciantionView.swift */; };
+		348232622635AF3A00BBA7CE /* SympthomsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348232612635AF3A00BBA7CE /* SympthomsTest.swift */; };
+		348232642635B9A300BBA7CE /* introducere_TE.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232632635B9A200BBA7CE /* introducere_TE.json */; };
+		348232692635C3E200BBA7CE /* intrebare2.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232652635C3DD00BBA7CE /* intrebare2.json */; };
+		3482326A2635C3E200BBA7CE /* intrebare3.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232662635C3DF00BBA7CE /* intrebare3.json */; };
+		3482326B2635C3E200BBA7CE /* intrebare1.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232672635C3E000BBA7CE /* intrebare1.json */; };
+		3482326C2635C3E200BBA7CE /* intrebare4.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232682635C3E200BBA7CE /* intrebare4.json */; };
+		3482326E2635D43C00BBA7CE /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3482326D2635D43C00BBA7CE /* success.json */; };
 		348A722A261FAEB30091F7D4 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A7229261FAEB30091F7D4 /* DocumentsView.swift */; };
-		34936947260F5B2A00FA0EFE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34936946260F5B2A00FA0EFE /* SettingsView.swift */; };
-		349369522610F9C900FA0EFE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349369512610F9C900FA0EFE /* HomeView.swift */; };
 		349FCF0725EFBCC800B05274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FCF0625EFBCC800B05274 /* AppDelegate.swift */; };
 		349FCF0925EFBCC800B05274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FCF0825EFBCC800B05274 /* SceneDelegate.swift */; };
 		349FCF0B25EFBCC800B05274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FCF0A25EFBCC800B05274 /* ContentView.swift */; };
 		349FCF0D25EFBCCB00B05274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349FCF0C25EFBCCB00B05274 /* Assets.xcassets */; };
 		349FCF1025EFBCCB00B05274 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349FCF0F25EFBCCB00B05274 /* Preview Assets.xcassets */; };
 		349FCF1325EFBCCB00B05274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349FCF1125EFBCCB00B05274 /* LaunchScreen.storyboard */; };
-		34AC0EA1261666820079E73E /* 03.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0E9B261666820079E73E /* 03.json */; };
-		34AC0EA2261666820079E73E /* 01.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0E9C261666820079E73E /* 01.json */; };
-		34AC0EA3261666820079E73E /* 05.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0E9D261666820079E73E /* 05.json */; };
-		34AC0EA4261666820079E73E /* 06.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0E9E261666820079E73E /* 06.json */; };
-		34AC0EA5261666820079E73E /* 02.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0E9F261666820079E73E /* 02.json */; };
-		34AC0EA6261666820079E73E /* 04.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0EA0261666820079E73E /* 04.json */; };
 		34AC0EAC261667B80079E73E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 34AC0EAB261667B80079E73E /* Lottie */; };
 		34AC0EB3261667F90079E73E /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC0EB2261667F90079E73E /* GifView.swift */; };
 		34B257C62620E75700EC2680 /* declaratie1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 34B257C32620E75700EC2680 /* declaratie1.pdf */; };
@@ -44,10 +39,23 @@
 		34B257CE2620EB2C00EC2680 /* declaratie2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 34B257CA2620EB2A00EC2680 /* declaratie2.pdf */; };
 		34B257CF2620EB2C00EC2680 /* declaratie3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 34B257CB2620EB2B00EC2680 /* declaratie3.pdf */; };
 		34B257D02620EB2C00EC2680 /* declaratie4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 34B257CC2620EB2C00EC2680 /* declaratie4.pdf */; };
+		34CF0C1826340639001FE56B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF0C1726340639001FE56B /* Home.swift */; };
+		34CF0C1E263437F2001FE56B /* handWash_Preventie.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C19263437DB001FE56B /* handWash_Preventie.json */; };
+		34CF0C1F263437F2001FE56B /* dezinfectant_Preventie.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C1A263437E0001FE56B /* dezinfectant_Preventie.json */; };
+		34CF0C21263437F2001FE56B /* mask_Preventie.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C1C263437EB001FE56B /* mask_Preventie.json */; };
+		34CF0C22263437F2001FE56B /* contactDirect_Preventie.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C1D263437F2001FE56B /* contactDirect_Preventie.json */; };
+		34CF0C24263439B9001FE56B /* autoizolare_Preventie.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C23263439B8001FE56B /* autoizolare_Preventie.json */; };
+		34CF0C29263440C8001FE56B /* tuse_Simptome.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C25263440B5001FE56B /* tuse_Simptome.json */; };
+		34CF0C2A263440C8001FE56B /* atentie_Simptome.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C26263440BA001FE56B /* atentie_Simptome.json */; };
+		34CF0C2B263440C8001FE56B /* ajutor_Simptome.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C27263440C1001FE56B /* ajutor_Simptome.json */; };
+		34CF0C2C263440C8001FE56B /* febra_Simptome.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF0C28263440C8001FE56B /* febra_Simptome.json */; };
+		34CF0C2E26344B97001FE56B /* IntrebariFrecvente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF0C2D26344B97001FE56B /* IntrebariFrecvente.swift */; };
+		34D13505263586B700E88C24 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13504263586B700E88C24 /* BlurView.swift */; };
+		34D13509263586C200E88C24 /* ModalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13506263586C000E88C24 /* ModalButtonView.swift */; };
+		34D1350A263586C200E88C24 /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13507263586C100E88C24 /* HalfModalView.swift */; };
+		34D1350B263586C200E88C24 /* HalfModalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13508263586C200E88C24 /* HalfModalContent.swift */; };
+		34D1350E26358F2300E88C24 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 34D1350D26358F2300E88C24 /* PartialSheet */; };
 		34ED19C1261762370072BD01 /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 34ED19C0261762370072BD01 /* SwiftUITrackableScrollView */; };
-		34ED19C92617BC000072BD01 /* febra.json in Resources */ = {isa = PBXBuildFile; fileRef = 34ED19C82617BBFF0072BD01 /* febra.json */; };
-		34ED19CC2617BC0A0072BD01 /* tuse.json in Resources */ = {isa = PBXBuildFile; fileRef = 34ED19CB2617BC0A0072BD01 /* tuse.json */; };
-		34ED19CF2617BC980072BD01 /* attention.json in Resources */ = {isa = PBXBuildFile; fileRef = 34ED19CE2617BC980072BD01 /* attention.json */; };
 		34ED19D22617BCB90072BD01 /* SimptomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED19D12617BCB90072BD01 /* SimptomeView.swift */; };
 		BF1D9C7F3DCE9BF64A4206F6 /* Pods_CoronaVirus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11C2B5FA7BC3CC258B5945 /* Pods_CoronaVirus.framework */; };
 /* End PBXBuildFile section */
@@ -85,26 +93,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		340B3F5625F2CF27005B1143 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		341231FE2620C8CC003F4371 /* Tools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tools.framework; path = Lib/Tools/Tools.framework; sourceTree = "<group>"; };
 		341232012620C8D9003F4371 /* PDFNet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFNet.framework; path = "Lib/Framework-dynamic/PDFNet.framework"; sourceTree = "<group>"; };
 		341232052620C95D003F4371 /* PDFNet.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PDFNet.xcframework; path = "Lib/Framework-dynamic/PDFNet.xcframework"; sourceTree = "<group>"; };
 		341232092620C967003F4371 /* Tools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Tools.xcframework; path = Lib/Tools/Tools.xcframework; sourceTree = "<group>"; };
-		3412350A262343B80021CA99 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		3416AEEB2617C70A008A46A8 /* emergency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emergency.json; sourceTree = "<group>"; };
 		34281B3126147814004A218C /* CardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		34281B38261482F9004A218C /* PreventieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventieView.swift; sourceTree = "<group>"; };
-		34281B3B26148308004A218C /* MythBustersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythBustersView.swift; sourceTree = "<group>"; };
+		342CD59C2635EF8A00CEB940 /* GifView_RepeatOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView_RepeatOnce.swift; sourceTree = "<group>"; };
 		343D5B5226164B35004BDDF5 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		343D5B5526164BCF004BDDF5 /* Pods */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pods; sourceTree = SOURCE_ROOT; };
-		3452C0AF25F275A600E2145B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3452C0B525F2794D00E2145B /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		3477C1F525FF3AAE00B0C0BC /* VacciantionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacciantionView.swift; sourceTree = "<group>"; };
+		348232612635AF3A00BBA7CE /* SympthomsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsTest.swift; sourceTree = "<group>"; };
+		348232632635B9A200BBA7CE /* introducere_TE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = introducere_TE.json; sourceTree = "<group>"; };
+		348232652635C3DD00BBA7CE /* intrebare2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intrebare2.json; sourceTree = "<group>"; };
+		348232662635C3DF00BBA7CE /* intrebare3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intrebare3.json; sourceTree = "<group>"; };
+		348232672635C3E000BBA7CE /* intrebare1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intrebare1.json; sourceTree = "<group>"; };
+		348232682635C3E200BBA7CE /* intrebare4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intrebare4.json; sourceTree = "<group>"; };
+		3482326D2635D43C00BBA7CE /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		348A7229261FAEB30091F7D4 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		3490A8C92620A86D000CC5FF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		3490A8D12620A8CC000CC5FF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
-		34936946260F5B2A00FA0EFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		349369512610F9C900FA0EFE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		349FCF0325EFBCC800B05274 /* CoronaVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349FCF0625EFBCC800B05274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349FCF0825EFBCC800B05274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,12 +122,6 @@
 		349FCF0F25EFBCCB00B05274 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		349FCF1225EFBCCB00B05274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349FCF1425EFBCCB00B05274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34AC0E9B261666820079E73E /* 03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 03.json; sourceTree = "<group>"; };
-		34AC0E9C261666820079E73E /* 01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 01.json; sourceTree = "<group>"; };
-		34AC0E9D261666820079E73E /* 05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 05.json; sourceTree = "<group>"; };
-		34AC0E9E261666820079E73E /* 06.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 06.json; sourceTree = "<group>"; };
-		34AC0E9F261666820079E73E /* 02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 02.json; sourceTree = "<group>"; };
-		34AC0EA0261666820079E73E /* 04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 04.json; sourceTree = "<group>"; };
 		34AC0EB2261667F90079E73E /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
 		34B257C32620E75700EC2680 /* declaratie1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = declaratie1.pdf; sourceTree = "<group>"; };
 		34B257C72620E84000EC2680 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
@@ -126,9 +129,21 @@
 		34B257CA2620EB2A00EC2680 /* declaratie2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = declaratie2.pdf; sourceTree = "<group>"; };
 		34B257CB2620EB2B00EC2680 /* declaratie3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = declaratie3.pdf; sourceTree = "<group>"; };
 		34B257CC2620EB2C00EC2680 /* declaratie4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = declaratie4.pdf; sourceTree = "<group>"; };
-		34ED19C82617BBFF0072BD01 /* febra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = febra.json; sourceTree = "<group>"; };
-		34ED19CB2617BC0A0072BD01 /* tuse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tuse.json; sourceTree = "<group>"; };
-		34ED19CE2617BC980072BD01 /* attention.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = attention.json; sourceTree = "<group>"; };
+		34CF0C1726340639001FE56B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		34CF0C19263437DB001FE56B /* handWash_Preventie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = handWash_Preventie.json; sourceTree = "<group>"; };
+		34CF0C1A263437E0001FE56B /* dezinfectant_Preventie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dezinfectant_Preventie.json; sourceTree = "<group>"; };
+		34CF0C1C263437EB001FE56B /* mask_Preventie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mask_Preventie.json; sourceTree = "<group>"; };
+		34CF0C1D263437F2001FE56B /* contactDirect_Preventie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contactDirect_Preventie.json; sourceTree = "<group>"; };
+		34CF0C23263439B8001FE56B /* autoizolare_Preventie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = autoizolare_Preventie.json; sourceTree = "<group>"; };
+		34CF0C25263440B5001FE56B /* tuse_Simptome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tuse_Simptome.json; sourceTree = "<group>"; };
+		34CF0C26263440BA001FE56B /* atentie_Simptome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = atentie_Simptome.json; sourceTree = "<group>"; };
+		34CF0C27263440C1001FE56B /* ajutor_Simptome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ajutor_Simptome.json; sourceTree = "<group>"; };
+		34CF0C28263440C8001FE56B /* febra_Simptome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = febra_Simptome.json; sourceTree = "<group>"; };
+		34CF0C2D26344B97001FE56B /* IntrebariFrecvente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrebariFrecvente.swift; sourceTree = "<group>"; };
+		34D13504263586B700E88C24 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		34D13506263586C000E88C24 /* ModalButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalButtonView.swift; sourceTree = "<group>"; };
+		34D13507263586C100E88C24 /* HalfModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalView.swift; sourceTree = "<group>"; };
+		34D13508263586C200E88C24 /* HalfModalContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalContent.swift; sourceTree = "<group>"; };
 		34ED19D12617BCB90072BD01 /* SimptomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimptomeView.swift; sourceTree = "<group>"; };
 		8D11C2B5FA7BC3CC258B5945 /* Pods_CoronaVirus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaVirus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC41163828BC5385C2EA0DF2 /* Pods-CoronaVirus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.release.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D1350E26358F2300E88C24 /* PartialSheet in Frameworks */,
 				34ED19C1261762370072BD01 /* SwiftUITrackableScrollView in Frameworks */,
 				34AC0EAC261667B80079E73E /* Lottie in Frameworks */,
 				3412320A2620C967003F4371 /* Tools.xcframework in Frameworks */,
@@ -182,10 +198,8 @@
 		34281B3526148262004A218C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				349369512610F9C900FA0EFE /* HomeView.swift */,
-				3412350A262343B80021CA99 /* Home.swift */,
-				340B3F5625F2CF27005B1143 /* NewsView.swift */,
-				34936946260F5B2A00FA0EFE /* SettingsView.swift */,
+				34CF0C1726340639001FE56B /* Home.swift */,
+				348232612635AF3A00BBA7CE /* SympthomsTest.swift */,
 				34281B37261482C6004A218C /* Cards */,
 			);
 			path = Home;
@@ -197,7 +211,7 @@
 				34281B3126147814004A218C /* CardsView.swift */,
 				34281B38261482F9004A218C /* PreventieView.swift */,
 				34ED19D12617BCB90072BD01 /* SimptomeView.swift */,
-				34281B3B26148308004A218C /* MythBustersView.swift */,
+				34CF0C2D26344B97001FE56B /* IntrebariFrecvente.swift */,
 				34160745262056FB005B65D3 /* Documents */,
 			);
 			path = Cards;
@@ -244,12 +258,12 @@
 				349FCF0625EFBCC800B05274 /* AppDelegate.swift */,
 				349FCF0825EFBCC800B05274 /* SceneDelegate.swift */,
 				349FCF0A25EFBCC800B05274 /* ContentView.swift */,
-				3452C0AF25F275A600E2145B /* TabBar.swift */,
 				34281B3526148262004A218C /* Home */,
 				3452C0B525F2794D00E2145B /* StatisticsView.swift */,
 				3477C1F525FF3AAE00B0C0BC /* VacciantionView.swift */,
 				349FCF0C25EFBCCB00B05274 /* Assets.xcassets */,
 				34AC0EA8261666D10079E73E /* Lottie */,
+				34D135032635866200E88C24 /* HalfModal */,
 				349FCF1125EFBCCB00B05274 /* LaunchScreen.storyboard */,
 				349FCF1425EFBCCB00B05274 /* Info.plist */,
 				349FCF0E25EFBCCB00B05274 /* Preview Content */,
@@ -268,19 +282,36 @@
 		34AC0EA8261666D10079E73E /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				34AC0E9F261666820079E73E /* 02.json */,
-				34AC0E9C261666820079E73E /* 01.json */,
-				34AC0E9B261666820079E73E /* 03.json */,
-				34AC0EA0261666820079E73E /* 04.json */,
-				34AC0E9D261666820079E73E /* 05.json */,
-				34AC0E9E261666820079E73E /* 06.json */,
-				34ED19C82617BBFF0072BD01 /* febra.json */,
-				34ED19CB2617BC0A0072BD01 /* tuse.json */,
-				34ED19CE2617BC980072BD01 /* attention.json */,
-				3416AEEB2617C70A008A46A8 /* emergency.json */,
+				3482326D2635D43C00BBA7CE /* success.json */,
+				348232672635C3E000BBA7CE /* intrebare1.json */,
+				348232652635C3DD00BBA7CE /* intrebare2.json */,
+				348232662635C3DF00BBA7CE /* intrebare3.json */,
+				348232682635C3E200BBA7CE /* intrebare4.json */,
+				34CF0C23263439B8001FE56B /* autoizolare_Preventie.json */,
+				34CF0C1D263437F2001FE56B /* contactDirect_Preventie.json */,
+				34CF0C1A263437E0001FE56B /* dezinfectant_Preventie.json */,
+				34CF0C19263437DB001FE56B /* handWash_Preventie.json */,
+				34CF0C1C263437EB001FE56B /* mask_Preventie.json */,
+				34CF0C27263440C1001FE56B /* ajutor_Simptome.json */,
+				34CF0C26263440BA001FE56B /* atentie_Simptome.json */,
+				34CF0C28263440C8001FE56B /* febra_Simptome.json */,
+				34CF0C25263440B5001FE56B /* tuse_Simptome.json */,
+				348232632635B9A200BBA7CE /* introducere_TE.json */,
 				34AC0EB2261667F90079E73E /* GifView.swift */,
+				342CD59C2635EF8A00CEB940 /* GifView_RepeatOnce.swift */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		34D135032635866200E88C24 /* HalfModal */ = {
+			isa = PBXGroup;
+			children = (
+				34D13508263586C200E88C24 /* HalfModalContent.swift */,
+				34D13507263586C100E88C24 /* HalfModalView.swift */,
+				34D13506263586C000E88C24 /* ModalButtonView.swift */,
+				34D13504263586B700E88C24 /* BlurView.swift */,
+			);
+			path = HalfModal;
 			sourceTree = "<group>";
 		};
 		5ED4950575F3CB93A872EE0A /* Pods */ = {
@@ -314,6 +345,7 @@
 			packageProductDependencies = (
 				34AC0EAB261667B80079E73E /* Lottie */,
 				34ED19C0261762370072BD01 /* SwiftUITrackableScrollView */,
+				34D1350D26358F2300E88C24 /* PartialSheet */,
 			);
 			productName = CoronaVirus;
 			productReference = 349FCF0325EFBCC800B05274 /* CoronaVirus.app */;
@@ -345,6 +377,7 @@
 			packageReferences = (
 				34AC0EAA261667B80079E73E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				34ED19BF261762370072BD01 /* XCRemoteSwiftPackageReference "trackable-scroll-view" */,
+				34D1350C26358F2200E88C24 /* XCRemoteSwiftPackageReference "PartialSheet" */,
 			);
 			productRefGroup = 349FCF0425EFBCC800B05274 /* Products */;
 			projectDirPath = "";
@@ -387,25 +420,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34AC0EA4261666820079E73E /* 06.json in Resources */,
-				34AC0EA1261666820079E73E /* 03.json in Resources */,
+				34CF0C2B263440C8001FE56B /* ajutor_Simptome.json in Resources */,
+				34CF0C24263439B9001FE56B /* autoizolare_Preventie.json in Resources */,
+				34CF0C2C263440C8001FE56B /* febra_Simptome.json in Resources */,
 				34B257D02620EB2C00EC2680 /* declaratie4.pdf in Resources */,
-				34ED19CC2617BC0A0072BD01 /* tuse.json in Resources */,
 				349FCF1325EFBCCB00B05274 /* LaunchScreen.storyboard in Resources */,
+				3482326E2635D43C00BBA7CE /* success.json in Resources */,
+				348232692635C3E200BBA7CE /* intrebare2.json in Resources */,
+				3482326A2635C3E200BBA7CE /* intrebare3.json in Resources */,
 				349FCF1025EFBCCB00B05274 /* Preview Assets.xcassets in Resources */,
-				34ED19C92617BC000072BD01 /* febra.json in Resources */,
+				34CF0C2A263440C8001FE56B /* atentie_Simptome.json in Resources */,
 				343D5B5326164B35004BDDF5 /* Pods in Resources */,
-				3416AEEC2617C70A008A46A8 /* emergency.json in Resources */,
-				34AC0EA3261666820079E73E /* 05.json in Resources */,
+				3482326B2635C3E200BBA7CE /* intrebare1.json in Resources */,
 				34B257CE2620EB2C00EC2680 /* declaratie2.pdf in Resources */,
-				34ED19CF2617BC980072BD01 /* attention.json in Resources */,
+				34CF0C1F263437F2001FE56B /* dezinfectant_Preventie.json in Resources */,
 				34B257CD2620EB2C00EC2680 /* declaratie5.pdf in Resources */,
 				34B257C62620E75700EC2680 /* declaratie1.pdf in Resources */,
-				34AC0EA5261666820079E73E /* 02.json in Resources */,
-				34AC0EA2261666820079E73E /* 01.json in Resources */,
 				349FCF0D25EFBCCB00B05274 /* Assets.xcassets in Resources */,
+				34CF0C29263440C8001FE56B /* tuse_Simptome.json in Resources */,
+				348232642635B9A300BBA7CE /* introducere_TE.json in Resources */,
+				34CF0C21263437F2001FE56B /* mask_Preventie.json in Resources */,
+				34CF0C1E263437F2001FE56B /* handWash_Preventie.json in Resources */,
+				3482326C2635C3E200BBA7CE /* intrebare4.json in Resources */,
+				34CF0C22263437F2001FE56B /* contactDirect_Preventie.json in Resources */,
 				34B257CF2620EB2C00EC2680 /* declaratie3.pdf in Resources */,
-				34AC0EA6261666820079E73E /* 04.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,21 +481,23 @@
 			files = (
 				34281B3226147815004A218C /* CardsView.swift in Sources */,
 				34281B39261482F9004A218C /* PreventieView.swift in Sources */,
-				34281B3C26148308004A218C /* MythBustersView.swift in Sources */,
 				349FCF0725EFBCC800B05274 /* AppDelegate.swift in Sources */,
 				34ED19D22617BCB90072BD01 /* SimptomeView.swift in Sources */,
+				34D13509263586C200E88C24 /* ModalButtonView.swift in Sources */,
 				3477C1F625FF3AAE00B0C0BC /* VacciantionView.swift in Sources */,
-				3412350B262343B80021CA99 /* Home.swift in Sources */,
-				34936947260F5B2A00FA0EFE /* SettingsView.swift in Sources */,
-				349369522610F9C900FA0EFE /* HomeView.swift in Sources */,
+				34CF0C2E26344B97001FE56B /* IntrebariFrecvente.swift in Sources */,
+				34D1350B263586C200E88C24 /* HalfModalContent.swift in Sources */,
+				342CD59D2635EF8A00CEB940 /* GifView_RepeatOnce.swift in Sources */,
 				34B257C82620E84000EC2680 /* PDFKitView.swift in Sources */,
 				349FCF0925EFBCC800B05274 /* SceneDelegate.swift in Sources */,
 				34AC0EB3261667F90079E73E /* GifView.swift in Sources */,
 				348A722A261FAEB30091F7D4 /* DocumentsView.swift in Sources */,
 				3452C0B625F2794D00E2145B /* StatisticsView.swift in Sources */,
+				34D13505263586B700E88C24 /* BlurView.swift in Sources */,
 				349FCF0B25EFBCC800B05274 /* ContentView.swift in Sources */,
-				340B3F5725F2CF27005B1143 /* NewsView.swift in Sources */,
-				3452C0B025F275A600E2145B /* TabBar.swift in Sources */,
+				34CF0C1826340639001FE56B /* Home.swift in Sources */,
+				348232622635AF3A00BBA7CE /* SympthomsTest.swift in Sources */,
+				34D1350A263586C200E88C24 /* HalfModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +717,14 @@
 				minimumVersion = 3.2.1;
 			};
 		};
+		34D1350C26358F2200E88C24 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.11;
+			};
+		};
 		34ED19BF261762370072BD01 /* XCRemoteSwiftPackageReference "trackable-scroll-view" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxnatchanon/trackable-scroll-view";
@@ -692,6 +740,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 34AC0EAA261667B80079E73E /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		34D1350D26358F2300E88C24 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34D1350C26358F2200E88C24 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
 		};
 		34ED19C0261762370072BD01 /* SwiftUITrackableScrollView */ = {
 			isa = XCSwiftPackageProductDependency;

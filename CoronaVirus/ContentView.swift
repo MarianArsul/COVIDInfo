@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 struct ContentView: View {
+    
+    @EnvironmentObject var partialSheetManager : PartialSheetManager
+    
     var body: some View {
-        TabBar()
+        NavigationView {
+            Home()
+        }
+        .addPartialSheet()
+        .navigationViewStyle(StackNavigationViewStyle())
+        .environmentObject(PartialSheetManager())
     }
 }
 

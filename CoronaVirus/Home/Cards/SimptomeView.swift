@@ -12,19 +12,13 @@ struct SimptomeView: View {
     var body: some View {
         VStack{
             HStack{
-                Image("simptome2")
+                Image("simptome_Bg")
                     .aspectRatio(contentMode: .fill)
                     .zIndex(1)
-                    .offset(y: 800)
-                    .offset(x: 1000)
+                    .offset(y: 460)
+                    .offset(x: 870)
                 
                 Spacer()
-                Link(destination: URL(string: "https://cetrebuiesafac.ro/cum-ne-protejam")!){
-                    Image(systemName: "info.circle")
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 25, weight: .bold))
-                        .zIndex(2)
-                }
             }
             .position(x: 160 ,y: 90)
             .padding(.leading, 30)
@@ -34,7 +28,7 @@ struct SimptomeView: View {
                 VStack(alignment: .leading){
                     Text("Simptome")
                         .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
                         .offset(x: -15)
                 }
                 .position(x: 160, y: -100)
@@ -54,7 +48,7 @@ struct SimptomeView: View {
                                 .frame(width:300, height: 250)
                                 
                                 Text(item.nume)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                                    .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                                     .font(.system(size: 20, weight: .bold))
                                     .offset(y: -30)
                                 
@@ -77,12 +71,12 @@ struct SimptomeView: View {
                     
                     VStack(){
                         ScrollView(.vertical, showsIndicators: false){
-                            GifView(imagine: "attention")
+                            GifView(imagine: "atentie_Simptome")
                             .frame(width:300, height: 250)
                                 .offset(y: 60)
                             
                             Text("Atenție")
-                                .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                                 .font(.system(size: 20, weight: .bold))
                                 .offset(y: 50)
                             
@@ -95,7 +89,7 @@ struct SimptomeView: View {
                                 .offset(y: 70)
                             
                             Image(systemName: "chevron.compact.down")
-                                .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                                 .font(.system(size: 20, weight: .bold))
                                 .offset(y: 100)
                             
@@ -125,12 +119,12 @@ struct SimptomeView: View {
                     
                     VStack(){
                         ScrollView(.vertical, showsIndicators: false){
-                            GifView(imagine: "emergency")
+                            GifView(imagine: "ajutor_Simptome")
                             .frame(width:300, height: 250)
                                 .offset(y: 60)
                             
                             Text("Cere ajutor")
-                                .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                                 .font(.system(size: 20, weight: .bold))
                                 .offset(y: 20)
                             
@@ -143,7 +137,7 @@ struct SimptomeView: View {
                                 .offset(y: 50)
                         
                             Image(systemName: "chevron.compact.down")
-                            .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                             .font(.system(size: 20, weight: .bold))
                             .offset(y: 70)
                         
@@ -181,7 +175,7 @@ struct SimptomeView: View {
                     HStack{
                         Image(systemName: "info.circle")
                             .font(.system(size: 25, weight: .bold))
-                            .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                             .padding(.leading, 20)
                             .padding(.trailing, 5)
                         
@@ -193,7 +187,7 @@ struct SimptomeView: View {
                                 .foregroundColor(Color.black)
                             Text("www.who.int")
                                 .font(.system(size: 14, weight: .bold))
-                                .foregroundColor(Color(#colorLiteral(red: 0.2488363683, green: 0.4235329926, blue: 0.9220878482, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0.8941176471, green: 0.3254901961, blue: 0.3607843137, alpha: 1)))
                         }
                         
                     }
@@ -205,7 +199,7 @@ struct SimptomeView: View {
             }
         }
         .frame(width: screen.width+30, height: screen.height+13)
-        .background(Color(#colorLiteral(red: 0.9734770656, green: 0.8399353623, blue: 0.6799591184, alpha: 1)))
+        .background(Color(#colorLiteral(red: 0.9646044374, green: 0.9647659659, blue: 0.9645816684, alpha: 1)))
     }
 }
 
@@ -225,7 +219,7 @@ struct Simptome : Identifiable{
 }
 
 let dataSimptome = [
-    Simptome(nume: "Febră", descriere: "Febră peste 38 de grade (în 90% din cazuri)", image: "febra"),
-    Simptome(nume: "Tuse", descriere: "Tuse uscată (în 60% din cazuri)", image: "tuse")
+    Simptome(nume: "Febră", descriere: "Febră peste 38 de grade (în 90% din cazuri)", image: "febra_Simptome"),
+    Simptome(nume: "Tuse", descriere: "Tuse uscată (în 60% din cazuri)", image: "tuse_Simptome")
 ]
 

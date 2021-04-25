@@ -59,7 +59,7 @@ struct Card: Identifiable {
 let cardsData = [
     Card(title: "Prevenție", description: "", description_height: 50, image: Image("preventie"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
     Card(title: "Simptome", description: "", description_height: 30, image: Image("simptome"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
-    Card(title: "Intrebari frecvente", description: "", description_height: 30, image: Image("intrebariFrecventeCard"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
+    Card(title: "Intrebări frecvente", description: "", description_height: 30, image: Image("intrebariFrecventeCard"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))),
     Card(title: "Documente", description: "", description_height: 30, image: Image("documente"), color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 ]
 
