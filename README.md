@@ -6,9 +6,8 @@ The COVID-19 pandemic has caused an uproar around the world, leading to an urgen
 # Use the app
 Currently, this needs to be built in Xcode to be used. Looking forward to releasing a Test Flight version, for easier install.
 Instructions:
-  * Download the repository as .zip
-  * Unpack and open the project in Xcode
-  * Build for your device and use.
+  * Open with Xcode
+  * Build & run for your device
 
   
 # Fair use & Creative Commons
