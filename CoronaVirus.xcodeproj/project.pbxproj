@@ -68,13 +68,6 @@
 			remoteGlobalIDString = 7AED09AF28573AA63FBC2850C2AB507B;
 			remoteInfo = "Pods-CoronaVirus";
 		};
-		3490A8D62620A8CC000CC5FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3490A8D12620A8CC000CC5FF /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7AED09AF28573AA63FBC2850C2AB507B;
-			remoteInfo = "Pods-CoronaVirus";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,7 +106,6 @@
 		3482326D2635D43C00BBA7CE /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		348A7229261FAEB30091F7D4 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		3490A8C92620A86D000CC5FF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
-		3490A8D12620A8CC000CC5FF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		349FCF0325EFBCC800B05274 /* CoronaVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349FCF0625EFBCC800B05274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349FCF0825EFBCC800B05274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,21 +217,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3490A8D22620A8CC000CC5FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3490A8D72620A8CC000CC5FF /* Pods_CoronaVirus.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		349FCEFA25EFBCC700B05274 = {
 			isa = PBXGroup;
 			children = (
 				349FCF0525EFBCC800B05274 /* CoronaVirus */,
 				349FCF0425EFBCC800B05274 /* Products */,
 				1511841BB788C20DA758A185 /* Frameworks */,
-				3490A8D12620A8CC000CC5FF /* Pods.xcodeproj */,
 				5ED4950575F3CB93A872EE0A /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -386,10 +369,6 @@
 					ProductGroup = 3490A8CA2620A86D000CC5FF /* Products */;
 					ProjectRef = 3490A8C92620A86D000CC5FF /* Pods.xcodeproj */;
 				},
-				{
-					ProductGroup = 3490A8D22620A8CC000CC5FF /* Products */;
-					ProjectRef = 3490A8D12620A8CC000CC5FF /* Pods.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -404,13 +383,6 @@
 			fileType = wrapper.framework;
 			path = Pods_CoronaVirus.framework;
 			remoteRef = 3490A8CD2620A86D000CC5FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3490A8D72620A8CC000CC5FF /* Pods_CoronaVirus.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Pods_CoronaVirus.framework;
-			remoteRef = 3490A8D62620A8CC000CC5FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
