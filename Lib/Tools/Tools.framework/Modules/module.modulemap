@@ -1,0 +1,6 @@
+framework module Tools {
+  umbrella header "Tools.h"
+
+  export *
+  module * { export * }
+}
