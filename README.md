@@ -8,3 +8,11 @@ Pandemia de COVID-19 a provocat tumult în întreaga lume, ceea ce a dus la o ne
 
 ## Documentatie
 Documentatia poate fi consultata aici: https://github.com/milovanarsul/COVIDInfo/blob/main/Documentatie.pdf
+
+## App screesnhots
+
+![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss1.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss2.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss3.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss4.jpeg)
+
