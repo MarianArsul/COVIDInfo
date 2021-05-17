@@ -1,15 +1,10 @@
-# COVIDInfo -- under development...
+# <img src="https://github.com/milovanarsul/COVIDInfo/blob/main/README/RoundedIcon.png" width="80"/> <br/> COVIDInfo <br/>
 
-# About
-The COVID-19 pandemic has caused an uproar around the world, leading to an urgent need for accurate and true information, which sometimes makes the difference between life and death. However, in line with this deadly pandemic, it is the proliferation of false news. While pandemics and fake news are not new phenomena, an unprecedented moment in history is taking place today due to the post-digital age in which we live. Digital media allows for the prolific and repeated spread of false news during crises, when accurate and truthful information is needed. Consequently, people's ability to discern between fact and reality is diminishing, and things are so precarious that the main enemy of this pandemic is no longer the virus itself, but misinformation. The "COVIDInfo" app comes to the aid of this unprecedented situation, aiming to combat misinformation distorted with this pandemic, presenting information and statistics from reliable and verified sources, to ensure the most accurate information.
+![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/intro.jpeg)
 
-# Use the app
-Currently, this needs to be built in Xcode to be used. Looking forward to releasing a Test Flight version, for easier install.
-Instructions:
-  * Open with Xcode
-  * Build & run for your device
+## Descriere
 
-  
-# Fair use & Creative Commons
-Please, if you are reusing any code from this project for your app, don't forget to link to this repository.
+Pandemia de COVID-19 a provocat tumult în întreaga lume, ceea ce a dus la o nevoie urgentă de informațîi corecte și adevărate, acestea făcând uneori diferența dintre viață și moarte. Totuși, în concordanță cu această pandemie mortală, este proliferarea știrilor false. În timp ce pandemiile și știrile false nu sunt fenomene noi, un moment fără precedent din istorie se desfășoară în prezent datorită erei post digitale în care trăim. Mass-media digitală permite răspândirea prolifică și repetată a știrilor false în timpul crizelor, atunci când sunt necesare informații corecte și veridice. În consecință, capacitatea oamenilor de a discerne între fapt și realitate se diminuează, iar lucrurile sunt atât de precare, încât inamicul principal din această pandemie nu mai este virusul în sine, ci dezinformarea. Aplicația "COVIDInfo” vine în ajutorul acestei situații fără precedent, propunându-și să combată dezinformarea denaturată odată cu această pandemie, prezentând informații și statistici din surse sigure și verificate, pentru a asigura o informare cât mai corectă.
 
+## Documentatie
+Documentatia poate fi consultata aici: https://github.com/milovanarsul/COVIDInfo/blob/main/Documentatie.pdf
