@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------------------
+// Copyright (c) 2001-2020 by PDFTron Systems Inc. All Rights Reserved.
+// Consult legal.txt regarding legal and license information.
+//---------------------------------------------------------------------------------------
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include? "Development.xcconfig"
+
+// Extra warning flags without an Xcode Build Settings UI:
+//
+// -Wmissing-variable-declarations
+//      Warn when global variables are declared in a source file without 'static' or a previous declaration.
+//
+// -Werror=implicit-int
+//      Error when the type of a variable is ommitted (and assumed to be 'int').
+//
+// -Werror=undeclared-selector
+//      Error when a selector is used without a visible declaration.
+//
+// -Wunused-property-ivar
+//      Warn when a property ivar is not used in the property's getter method. This usually means that the property is derived from other state and does not need an ivar.
+//
+// -Wobjc-property-assign-on-object-type
+//      Warn when a property with an object-type (id) has the 'assign' property attribute.
+//
+// -Wmethod-signatures
+//      Warn when the return type or type of a parameter is different in the declaration and definition of a function/method.
+//
+WARNING_CFLAGS = $(inherited) -Wmissing-variable-declarations -Werror=implicit-int -Werror=undeclared-selector -Wunused-property-ivar -Wobjc-property-assign-on-object-type
