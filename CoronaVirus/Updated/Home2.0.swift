@@ -33,7 +33,7 @@ struct Home2_0: View {
                         HStack {
                             Text(timeOfDay() + "MILOVAN")
                                 .font(.system(size: 15, weight: .bold))
-                                .foregroundColor(Color(#colorLiteral(red: 0.252196312, green: 0.4833931327, blue: 0.996443212, alpha: 1)))
+                                .foregroundColor(Color.black)
                                 
                             Spacer()
                                 
@@ -43,13 +43,12 @@ struct Home2_0: View {
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
                         
+                        
                         HStack{
                             Text("Setari")
                         }
                         .frame(width: 50, height: 20)
-                        
-                        
-                        
+
                         Divider()
                             .padding(.leading, 20)
                             .padding(.trailing, 20)

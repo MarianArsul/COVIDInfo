@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import PDFNet
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -37,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions:[UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            PTPDFNet.initialize("Insert Commercial License Key Here After Purchase")
             return true
         }
 
