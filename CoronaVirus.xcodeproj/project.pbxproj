@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3412320A2620C967003F4371 /* Tools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341232092620C967003F4371 /* Tools.xcframework */; };
-		3412320B2620C967003F4371 /* Tools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341232092620C967003F4371 /* Tools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341F18092642888C0026324C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F18082642888C0026324C /* Test.swift */; };
 		341F180C264288FA0026324C /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F180B264288FA0026324C /* VisualEffectBlur.swift */; };
 		342CD59D2635EF8A00CEB940 /* GifView_RepeatOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CD59C2635EF8A00CEB940 /* GifView_RepeatOnce.swift */; };
-		343D5B5326164B35004BDDF5 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 343D5B5226164B35004BDDF5 /* Pods */; };
 		344110AA263D833F0032BC05 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 344110A9263D833F0032BC05 /* SwiftSoup */; };
 		348232642635B9A300BBA7CE /* introducere_TE.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232632635B9A200BBA7CE /* introducere_TE.json */; };
 		348232692635C3E200BBA7CE /* intrebare2.json in Resources */ = {isa = PBXBuildFile; fileRef = 348232652635C3DD00BBA7CE /* intrebare2.json */; };
@@ -70,41 +67,14 @@
 		34EB21EB2652503100BFB451 /* VaccineQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB21E92652501F00BFB451 /* VaccineQuestions.swift */; };
 		34EB21EC2652503100BFB451 /* VaccinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB21EA2652503100BFB451 /* VaccinationView.swift */; };
 		34ED19C1261762370072BD01 /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 34ED19C0261762370072BD01 /* SwiftUITrackableScrollView */; };
+		34FAFA7026529FDA00BAD12D /* Screenshot1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FAFA6E26529FDA00BAD12D /* Screenshot1.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3490A8CD2620A86D000CC5FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3490A8C92620A86D000CC5FF /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7AED09AF28573AA63FBC2850C2AB507B;
-			remoteInfo = "Pods-CoronaVirus";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		341232082620C95D003F4371 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3412320B2620C967003F4371 /* Tools.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		341231FE2620C8CC003F4371 /* Tools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tools.framework; path = Lib/Tools/Tools.framework; sourceTree = "<group>"; };
-		341232092620C967003F4371 /* Tools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Tools.xcframework; path = Lib/Tools/Tools.xcframework; sourceTree = "<group>"; };
 		3414473B2641BFFD00F34A32 /* Various.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Various.playground; path = ../Various.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		341F18082642888C0026324C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		341F180B264288FA0026324C /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		342CD59C2635EF8A00CEB940 /* GifView_RepeatOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView_RepeatOnce.swift; sourceTree = "<group>"; };
-		343D5B5226164B35004BDDF5 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
-		343D5B5526164BCF004BDDF5 /* Pods */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pods; sourceTree = SOURCE_ROOT; };
 		348232632635B9A200BBA7CE /* introducere_TE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = introducere_TE.json; sourceTree = "<group>"; };
 		348232652635C3DD00BBA7CE /* intrebare2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intrebare2.json; sourceTree = "<group>"; };
 		348232662635C3DF00BBA7CE /* intrebare3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intrebare3.json; sourceTree = "<group>"; };
@@ -113,7 +83,6 @@
 		3482326D2635D43C00BBA7CE /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		348A7229261FAEB30091F7D4 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		348A79C2264EF7D700AF0C01 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		3490A8C92620A86D000CC5FF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		349FCF0325EFBCC800B05274 /* CoronaVirus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaVirus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349FCF0625EFBCC800B05274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349FCF0825EFBCC800B05274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,8 +128,7 @@
 		34EB21E526524FDD00BFB451 /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		34EB21E92652501F00BFB451 /* VaccineQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaccineQuestions.swift; path = "CoronaVirus/New Group2/VaccineQuestions.swift"; sourceTree = SOURCE_ROOT; };
 		34EB21EA2652503100BFB451 /* VaccinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccinationView.swift; sourceTree = "<group>"; };
-		EC41163828BC5385C2EA0DF2 /* Pods-CoronaVirus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.release.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.release.xcconfig"; sourceTree = "<group>"; };
-		F1A2EAC2229E15D3435922FE /* Pods-CoronaVirus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaVirus.debug.xcconfig"; path = "Target Support Files/Pods-CoronaVirus/Pods-CoronaVirus.debug.xcconfig"; sourceTree = "<group>"; };
+		34FAFA6E26529FDA00BAD12D /* Screenshot1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screenshot1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +140,6 @@
 				34D1350E26358F2300E88C24 /* PartialSheet in Frameworks */,
 				34ED19C1261762370072BD01 /* SwiftUITrackableScrollView in Frameworks */,
 				34AC0EAC261667B80079E73E /* Lottie in Frameworks */,
-				3412320A2620C967003F4371 /* Tools.xcframework in Frameworks */,
 				34BC9A75264DA3A800259BF6 /* SwiftUICharts in Frameworks */,
 				344110AA263D833F0032BC05 /* SwiftSoup in Frameworks */,
 			);
@@ -184,10 +151,6 @@
 		1511841BB788C20DA758A185 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				341232092620C967003F4371 /* Tools.xcframework */,
-				341231FE2620C8CC003F4371 /* Tools.framework */,
-				343D5B5226164B35004BDDF5 /* Pods */,
-				343D5B5526164BCF004BDDF5 /* Pods */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,21 +192,12 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
-		3490A8CA2620A86D000CC5FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3490A8CE2620A86D000CC5FF /* Pods_CoronaVirus.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		349FCEFA25EFBCC700B05274 = {
 			isa = PBXGroup;
 			children = (
 				349FCF0525EFBCC800B05274 /* CoronaVirus */,
 				349FCF0425EFBCC800B05274 /* Products */,
 				1511841BB788C20DA758A185 /* Frameworks */,
-				5ED4950575F3CB93A872EE0A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,6 +217,7 @@
 				349FCF0825EFBCC800B05274 /* SceneDelegate.swift */,
 				349FCF0A25EFBCC800B05274 /* ContentView.swift */,
 				34BC9A6D264D1EA400259BF6 /* WelcomeScreen.swift */,
+				34FAFA6E26529FDA00BAD12D /* Screenshot1.swift */,
 				34281B3526148262004A218C /* Home */,
 				34EB21E326524FA100BFB451 /* Statistics */,
 				34EB21E826524FF200BFB451 /* Vaccination */,
@@ -370,16 +325,6 @@
 			path = Vaccination;
 			sourceTree = "<group>";
 		};
-		5ED4950575F3CB93A872EE0A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3490A8C92620A86D000CC5FF /* Pods.xcodeproj */,
-				F1A2EAC2229E15D3435922FE /* Pods-CoronaVirus.debug.xcconfig */,
-				EC41163828BC5385C2EA0DF2 /* Pods-CoronaVirus.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,11 +332,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 349FCF1725EFBCCB00B05274 /* Build configuration list for PBXNativeTarget "CoronaVirus" */;
 			buildPhases = (
-				FB8F86B6AECC53904E435072 /* [CP] Check Pods Manifest.lock */,
 				349FCEFF25EFBCC800B05274 /* Sources */,
 				349FCF0025EFBCC800B05274 /* Frameworks */,
 				349FCF0125EFBCC800B05274 /* Resources */,
-				341232082620C95D003F4371 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,28 +386,12 @@
 			);
 			productRefGroup = 349FCF0425EFBCC800B05274 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3490A8CA2620A86D000CC5FF /* Products */;
-					ProjectRef = 3490A8C92620A86D000CC5FF /* Pods.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				349FCF0225EFBCC800B05274 /* CoronaVirus */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		3490A8CE2620A86D000CC5FF /* Pods_CoronaVirus.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Pods_CoronaVirus.framework;
-			remoteRef = 3490A8CD2620A86D000CC5FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		349FCF0125EFBCC800B05274 /* Resources */ = {
@@ -481,7 +408,6 @@
 				3482326A2635C3E200BBA7CE /* intrebare3.json in Resources */,
 				349FCF1025EFBCCB00B05274 /* Preview Assets.xcassets in Resources */,
 				34CF0C2A263440C8001FE56B /* atentie_Simptome.json in Resources */,
-				343D5B5326164B35004BDDF5 /* Pods in Resources */,
 				3482326B2635C3E200BBA7CE /* intrebare1.json in Resources */,
 				34B257CE2620EB2C00EC2680 /* declaratie2.pdf in Resources */,
 				34CF0C1F263437F2001FE56B /* dezinfectant_Preventie.json in Resources */,
@@ -499,31 +425,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FB8F86B6AECC53904E435072 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoronaVirus-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		349FCEFF25EFBCC800B05274 /* Sources */ = {
@@ -557,6 +458,7 @@
 				349FCF0B25EFBCC800B05274 /* ContentView.swift in Sources */,
 				34EB21EC2652503100BFB451 /* VaccinationView.swift in Sources */,
 				34EB21DF26524F8400BFB451 /* CardsView.swift in Sources */,
+				34FAFA7026529FDA00BAD12D /* Screenshot1.swift in Sources */,
 				34EB21DA26524F3300BFB451 /* NewsExtended1.swift in Sources */,
 				34EB21E026524F8400BFB451 /* IntrebariFrecvente.swift in Sources */,
 				341F18092642888C0026324C /* Test.swift in Sources */,
@@ -696,7 +598,6 @@
 		};
 		349FCF1825EFBCCB00B05274 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A2EAC2229E15D3435922FE /* Pods-CoronaVirus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -723,7 +624,6 @@
 		};
 		349FCF1925EFBCCB00B05274 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC41163828BC5385C2EA0DF2 /* Pods-CoronaVirus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
