@@ -1,4 +1,4 @@
-# <img src="https://github.com/milovanarsul/COVIDInfo/blob/main/README/RoundedIcon.png" width="80"/> <br/> COVIDInfo <br/>
+# <img src="https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/RoundedIcon.png" width="80"/> <br/> COVIDInfo <br/>
 
 ![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/intro.jpeg)
 
@@ -11,8 +11,8 @@ Documentația poate fi consultată aici: https://github.com/milovanarsul/COVIDIn
 
 ## App screesnhots
 
-![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss1.jpeg)
-![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss2.jpeg)
-![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss3.jpeg)
-![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/ss4.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/ss1.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/ss2.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/ss3.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/ss4.jpeg)
 
