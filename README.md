@@ -1,6 +1,6 @@
 # <img src="https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/RoundedIcon.png" width="80"/> <br/> COVIDInfo <br/>
 
-![alt text](https://github.com/milovanarsul/COVIDInfo/blob/main/README/intro.jpeg)
+![alt text](https://github.com/milovanarsul/COVIDInfo_SwiftUI/blob/main/README/intro.jpeg)
 
 ## Descriere
 
